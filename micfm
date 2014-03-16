@@ -1,0 +1,3 @@
+#!/bin/bash
+
+arecord -d0 -c1 -f S16_LE -r 16000 -twav -D hw:1,0 | sudo ./pifm -

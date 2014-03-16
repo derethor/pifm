@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ffmpeg -i "$1" -f s16le -ar 44.10k -ac 1 - | sudo ./pifm - 103.3 44100
